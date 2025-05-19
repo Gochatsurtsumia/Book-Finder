@@ -1,4 +1,5 @@
-import "../styles/FavoritesBar.css";
+import React from "react";
+import "../styles/Favoritesbar.css";
 
 export default function FavoritesBar({ favorites, onSelect, hoverIndex, setHoverIndex }) {
   return (
