@@ -1,0 +1,141 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.modal-cover {
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.modal-no-image {
+  width: 150px;
+  height: 220px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.modal-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.modal-author,
+.modal-year {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.open-library-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.modal-fav-btn {
+    background-color: #2196f3;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color:white;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  margin-top: 90px;
+}
+.modal-fav-btn:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+  transition: transform 0.3s ease;
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 26px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+.close-button.hover {
+  color: #000;
+}
+@media (max-width: 400px) {
+  .modal-content {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+  .modal-cover,
+  .modal-no-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .modal-details {
+    align-items: center;
+    text-align: center;
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  .modal-author,
+  .modal-year,
+  .open-library-link {
+    font-size: 13px;
+  }
+
+  .modal-fav-btn {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .close-button {
+    top: 10px;
+    right: 10px;
+  }
+}
