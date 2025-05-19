@@ -3,7 +3,7 @@ import BookCard from "../components/BookCard";
 import BookModal from "../components/BookModal";
 import FavoritesBar from "../components/FavoritesBar";
 import SearchBox from "../components/SearchBox";
-import "../styles/App.css";
+import "../styles/app.css";
 
 export default function App() {
   const [query, setQuery] = useState("");
