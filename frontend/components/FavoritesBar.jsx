@@ -1,4 +1,4 @@
-import "../styles/favoritesBar.css";
+import "../styles/FavoritesBar.css";
 
 export default function FavoritesBar({ favorites, onSelect, hoverIndex, setHoverIndex }) {
   return (
